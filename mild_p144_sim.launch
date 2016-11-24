@@ -1,0 +1,24 @@
+<launch>
+
+
+ <param name="robot_description" textfile="$(find asr_move_base)/doc/mild.urdf" /> 
+  
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher">
+   <param name="publish_frequency" value="150"/>
+</node>
+
+<node  name="map_server" pkg="map_server" type="map_server" args="$(find asr_move_base)/doc/map.yaml" required="true"/>
+<node  name="fake_odom" pkg="fake_odom" type="fake_odom" required="true"/>
+
+<node pkg="tf" type="static_transform_publisher" name="fake_map" args="0 0 0 0 0 0 1 map odom 100" />
+   <node   name="asr_move_base" pkg="asr_move_base" type="asr_move_base" respawn="false"  output="screen">
+	 <param name="controller_frequency" value="10.0"/>
+        <rosparam file="$(find asr_move_base)/doc/costmap_common_params.yaml" command="load" ns="global_costmap"/>
+        <rosparam file="$(find asr_move_base)/doc/costmap_common_params.yaml" command="load" ns="local_costmap"/>
+        <rosparam file="$(find asr_move_base)/doc/global_costmap_params.yaml" command="load"/>
+        <rosparam file="$(find asr_move_base)/doc/local_costmap_params.yaml" command="load"/>
+        <rosparam file="$(find asr_move_base)/doc/base_local_planner_params.yaml" command="load"/>
+        <param name="planner_patience" value="20.0"/>
+   	<param name="controller_patience" value="25.0"/>
+</node>
+</launch>

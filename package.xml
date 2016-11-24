@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package>
+  <name>asr_mild_base_fake_driving</name>
+  <version>1.0.0</version>
+  <description>The asr_mild_base_fake_driving package</description>
+  <author>Dehmani Souheil, Karrenbauer Oliver, Meißner Pascal</author>
+  <maintainer email="pascal.meissner@posteo.de">Meißner Pascal</maintainer>
+  <license>BSD</license>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>gazebo_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>Boost</build_depend>
+  
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>nav_msgs</run_depend>
+  <run_depend>gazebo_msgs</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>Boost</run_depend>
+
+  <export>
+    
+  </export>
+</package>
