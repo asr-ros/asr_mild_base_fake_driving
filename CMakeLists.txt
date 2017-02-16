@@ -25,6 +25,6 @@ include_directories(
 	${Boost_INCLUDE_DIRS}
 )
 
-add_executable(${PROJECT_NAME} src/asr_mild_base_fake_driving.cpp)
+add_executable(${PROJECT_NAME} src/mild_fake_odom.cpp)
 
 target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES})
