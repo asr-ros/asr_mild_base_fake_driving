@@ -4,7 +4,7 @@
   <version>1.0.0</version>
   <description>The asr_mild_base_fake_driving package</description>
   <author>Dehmani Souheil, Karrenbauer Oliver, Meißner Pascal</author>
-  <maintainer email="pascal.meissner@posteo.de">Meißner Pascal</maintainer>
+  <maintainer email="asr-ros@lists.kit.edu">Meißner Pascal</maintainer>
   <license>BSD</license>
   
   <buildtool_depend>catkin</buildtool_depend>
