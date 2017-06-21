@@ -16,7 +16,7 @@ find_package(Boost REQUIRED COMPONENTS
 
 catkin_package(
 	CATKIN_DEPENDS roscpp std_msgs tf nav_msgs gazebo_msgs geometry_msgs
-	DEPENDS boost
+	DEPENDS Boost
 )
 
 include_directories( 
