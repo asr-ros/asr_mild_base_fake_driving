@@ -2,7 +2,7 @@
 <package>
   <name>asr_mild_base_fake_driving</name>
   <version>1.0.0</version>
-  <description>The asr_mild_base_fake_driving package</description>
+  <description>The asr_mild_base_fake_driving package provides a simulation system for the robot driving. It simulates the desired driven way which is calculated by the navigation.</description>
   <author>Dehmani Souheil, Karrenbauer Oliver, Meißner Pascal</author>
   <maintainer email="asr-ros@lists.kit.edu">Meißner Pascal</maintainer>
   <license>BSD</license>
